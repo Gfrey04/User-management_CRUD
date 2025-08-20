@@ -1,0 +1,20 @@
+# Set default behavior to automatically normalize line endings.
+* text=auto
+
+# Ensure that all .sh and .bat files are treated as text
+*.sh text
+*.bat text
+
+# Specific handling for certain files:
+# Treat Dockerfiles and configuration files as text (if you want to maintain proper line endings)
+Dockerfile text
+*.yml text
+*.json text
+*.xml text
+
+# Handle .png and .jpg as binary files
+*.png binary
+*.jpg binary
+
+# Set *.md files to always have LF endings
+*.md text eol=lf
